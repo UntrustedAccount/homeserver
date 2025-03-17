@@ -88,6 +88,10 @@ services:
       - ${HOMEPATH}Sonarr/tvshows:/data/TVShows
       - ${HOMEPATH}Lidarr/music:/data/Music
       - ${HOMEPATH}Readarr/books:/data/Books
+    environment:
+      - PUID=${PUID}
+      - GID=${PGID}
+      - TZ=${TZ}
     restart: unless-stopped
     depends_on:
       - tailscale
