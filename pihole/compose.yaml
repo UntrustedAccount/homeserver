@@ -13,7 +13,7 @@ services:
       FTLCONF_webserver_api_password: ${PASSWORD} 
     volumes:
       # For persisting Pi-hole's databases and common configuration file
-      - "${HOMEPATH}/Pihole:/etc/pihole"
+      - "${HOMEPATH}Pihole:/etc/pihole"
     cap_add:
       - NET_ADMIN
     restart: unless-stopped

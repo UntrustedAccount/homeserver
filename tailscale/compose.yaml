@@ -25,7 +25,7 @@ services:
       - "8096:8096/tcp"   # Jellyfin web interface
       - "7359:7359/udp"   # Network discovery
       - "1900:1900/udp"   # DLNA port
-      - "8080:8080"       # QBittorent
+      - "9090:9090"       # QBittorent
       - "6881:6881"       # QBittorent
       - "6881:6881/udp"   # QBittorent
       - "9443:9443"       # Portainer

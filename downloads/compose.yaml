@@ -9,7 +9,7 @@ services:
       - ${HOMEPATH}qbittorrent/config:/config
       - ${HOMEPATH}Downloads:/downloads
     environment:
-      - WEBUI_PORT=8080
+      - WEBUI_PORT=9090
       - TORRENTING_PORT=6881
     healthcheck:
       start_period: 15s
